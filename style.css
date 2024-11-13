@@ -1,11 +1,71 @@
+@import "utils.css";
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-style: solid;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background-color: var(--background-color);
 }
 
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+nav {
+  padding: 1.25rem 3.5rem;
+}
+
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 12rem;
+  width: 16rem;
+  background-image: url("./images/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav .left a {
+  padding: var(--link-padding);
+  margin: 0px var(--link-margin);
+  font-family: var(--font-normal);
+  font-weight: 550;
+  color: var(--black);
+}
+
+nav .right button {
+  margin: 0.75rem;
+}
+
+.hero {
+  margin-top: 7em;
+}
+
+.hero h1 {
+  color: var(--black);
+  font-family: var(--font-title);
+  font-size: 3rem;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+
+.hero p {
+  font-family: var(--font-normal);
+  font-size: 1.2rem;
+  padding: 0 8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hero-buttons button {
+  margin: 2rem 0.5rem;
+}

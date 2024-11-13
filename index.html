@@ -4,20 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arabica Coffee</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <div class="left">
-        <!-- logo here -->
+    <nav class="flex-row justify-between items-center">
+      <div class="left flex-row items-center">
         <a href="">Home</a>
         <a href="">Courses</a>
         <a href="">About Us</a>
-        <a href="">Contact Us</a>
+        <a href="">Contact</a>
       </div>
+      <div class="logo"></div>
       <div class="right">
-        <button>Action 1</button>
-        <button>Action 2</button>
+        <button class="button button-primary">Action 1</button>
+        <button class="button button-secondary">Action 2</button>
       </div>
     </nav>
+    <div class="logo-section flex-row justify-center"></div>
+    <section class="hero flex-col items-center">
+      <h1>Become a Skilled Barista</h1>
+      <p>
+        Join our comprehensive barista training program and learn the art of
+        coffee making from industry experts. Whether you're a beginner or
+        looking to enhance your skills, we have the perfect course for you.
+      </p>
+      <div class="hero-buttons flex-row justify-center">
+        <button class="button button-primary">View Details</button>
+        <button class="button button-secondary">Contact Us</button>
+      </div>
+    </section>
   </body>
 </html>
