@@ -34,6 +34,45 @@ nav {
   background-repeat: no-repeat;
 }
 
+.button {
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.button-primary::before {
+  background: var(--black);
+}
+
+.button-secondary::before {
+  background: var(--black);
+}
+
+.button-primary:hover {
+  /* background-color: var(--black); */
+  color: var(--background-color);
+}
+
+.button-secondary:hover {
+  color: var(--background-color);
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
 nav .left a {
   padding: var(--link-padding);
   margin: 0px var(--link-margin);
