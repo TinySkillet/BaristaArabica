@@ -19,7 +19,7 @@ a {
 }
 
 nav {
-  padding: 1.25rem 3.5rem;
+  padding: 2.25rem 3.5rem;
 }
 
 .logo {
@@ -42,8 +42,9 @@ nav .left a {
   color: var(--black);
 }
 
-nav .right button {
-  margin: 0.75rem;
+nav .right {
+  justify-content: space-around;
+  width: 25%;
 }
 
 .hero {
@@ -53,14 +54,14 @@ nav .right button {
 .hero h1 {
   color: var(--black);
   font-family: var(--font-title);
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: bold;
   word-spacing: 5px;
 }
 
 .hero p {
   font-family: var(--font-normal);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0 8rem;
   text-align: center;
   margin-top: 1rem;
@@ -68,4 +69,32 @@ nav .right button {
 
 .hero-buttons button {
   margin: 2rem 0.5rem;
+}
+
+footer {
+  padding: 1.5rem 10rem;
+  padding-bottom: 0;
+}
+
+footer h1 {
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: var(--font-normal);
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.social-link svg {
+  margin-right: 0.75rem;
+}
+
+.social-link span,
+footer .left a {
+  font-family: var(--font-normal);
+  padding: 1rem 0;
 }
