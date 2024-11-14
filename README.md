@@ -44,21 +44,18 @@ Understanding the tools and equipment of a coffee bar.
 -Knowledge about Italian and other different international coffee recipes.
 -Café Menu planning and barista speed test.
 -Third wave coffee culture (Manual Coffee Brewing System) .
-Bubble tea making course.
+
+### Bubble tea making course.
+
 -Video making for the abroad job apply.
 -Interview preparation course for abroad job apply.
 -HACCP and Service class
--Learning a high level of customer service.
+-Learning high level of customer service.
 Duration: 1 Week (2 hours per day)
-
 -Different information about types of milk
-
 -This course is more detailed in different latte art like heart, Tulip, Rosetta, Swan Ete.
-
 -Milk Frothing and Pouring Technique
-
 Details in different latte art like heart, Tulip, Rosetta, Swan Etc.
-
 -Different techniques of latte art (free pour, etching, topping/ coco art, color/rainbow latte etc.
 
 => facebook link
@@ -72,8 +69,8 @@ https://www.tiktok.com/@arabica.brew.coff?_t=8qmA9Li3L9z&_r=1
 
 => Youtube
 https://youtube.com/@arabicabrewcoffeeschool?si=Lcxgkx-MSvtwKtD2
-YouTube
+
 Arabica Brew Coffee School
-Coffee Shop and Barista Training Centre.Also We Are Providing Roasted Coffee Beans.
+Coffee Shop and Barista Training Centre. Also We Are Providing Roasted Coffee Beans.
 Location:Koteshor chowk
-For More Details:9865991279/9861197332
+For More Details: 9865991279 / 9861197332
