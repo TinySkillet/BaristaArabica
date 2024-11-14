@@ -115,7 +115,7 @@ footer .left a {
 .logo-header {
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 53%;
   transform: translate(-50%, -50%);
   color: #ffffff;
   transition: transform 1s ease;
@@ -124,21 +124,29 @@ footer .left a {
 .intro-logo {
   position: relative;
   display: inline-block;
-  bottom: -1.25rem;
+  bottom: -4.5rem;
   opacity: 1;
   font-size: 1.125rem; 
 }
 
 .intro-logo.active {
-  bottom: 0;
+  bottom: -2rem;
   opacity: 1;
-  transition: ease-in-out 0.5s;
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .intro-logo.fade {
-  bottom: 10.625rem; 
+  bottom: -3rem; 
   opacity: 0;
-  transition: ease-in-out 0.5s;
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.intro img {
+  position: absolute;
+  margin-left: -5rem;
+  margin-top: 0.5rem;
+  height: 6.25rem;
+  width: 4.375rem;
 }
 
 /* -------------- Contact Page ------------- */
