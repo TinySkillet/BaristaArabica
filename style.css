@@ -142,3 +142,28 @@ footer .left a {
   padding: 1rem 0;
   cursor: pointer;
 }
+
+footer .left p {
+  font-family: var(--font-normal);
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+
+footer .center .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+footer .center .bottom p {
+  font-family: var(--font-normal);
+  color: var(--green);
+  font-size: 0.75rem;
+}
+
+footer .center .bottom p:last-of-type {
+  text-align: right;
+}
