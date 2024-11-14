@@ -114,9 +114,74 @@ nav .right {
   margin: 2rem 0.5rem;
 }
 
+.testimonials {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.testimonials > h1 {
+  font-family: var(--font-title);
+  font-weight: 550;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.testimonials p {
+  font-family: var(--font-normal);
+  width: 42rem;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1ft 1ft;
+  margin-top: 1rem;
+  gap: 2rem 2rem;
+}
+
+.testimonial {
+  background-color: var(--brown);
+  border-radius: 0.7rem;
+  padding: 1.5rem 2rem 0rem 2rem;
+}
+
+.profilepic {
+  background-image: url("./images/avatar.png");
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.testimonial .bottom {
+  text-align: start;
+  width: 35rem;
+}
+
+.info {
+  margin-left: 1rem;
+}
+
+.info h2,
+.info h3 {
+  font-family: var(--font-normal);
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.info h2 {
+  font-weight: 700;
+}
+
 footer {
   padding: 1.5rem 10rem;
-  padding-bottom: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 footer h1 {
