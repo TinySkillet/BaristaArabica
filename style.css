@@ -91,19 +91,11 @@ nav .right {
 }
 
 .hero {
-  justify-content: center;
   margin-top: 7em;
-  background-image: url("./images/2148824409.jpg");
-  background-position: 0 -10rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 25rem;
 }
 
 .hero h1 {
-  text-shadow: 1px 2px 1px var(--black), 1px 2px 1px var(--black),
-    1px 2px 1px var(--black), 1px 2px 1px var(--black);
-  color: var(--background-color);
+  color: var(--black);
   font-family: var(--font-title);
   font-size: 2.75rem;
   font-weight: bold;
@@ -111,18 +103,15 @@ nav .right {
 }
 
 .hero p {
-  text-shadow: 0px 1px 1px var(--black), 0px 1px 1px var(--black),
-    0px 1px 1px var(--black), 0px 1px 1px var(--black);
   font-family: var(--font-normal);
   font-size: 1.1rem;
   padding: 0 8rem;
   text-align: center;
   margin-top: 1rem;
-  color: var(--background-color);
 }
 
 .hero-buttons button {
-  margin: 2rem 0.5rem 0rem 0.5rem;
+  margin: 2rem 0.5rem;
 }
 
 .testimonials {
