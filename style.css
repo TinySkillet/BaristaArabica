@@ -248,7 +248,7 @@ footer .center .bottom p:last-of-type {
 
 .intro {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
@@ -271,7 +271,7 @@ footer .center .bottom p:last-of-type {
   display: inline-block;
   bottom: -4.5rem;
   opacity: 1;
-  font-size: 1.125rem; 
+  font-size: 1.125rem;
 }
 
 .intro-logo.active {
@@ -281,7 +281,7 @@ footer .center .bottom p:last-of-type {
 }
 
 .intro-logo.fade {
-  bottom: -3rem; 
+  bottom: -3rem;
   opacity: 0;
   transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -299,13 +299,12 @@ footer .center .bottom p:last-of-type {
 .social {
   display: flex;
   align-items: center;
-  margin: 0.625rem 0; 
+  margin: 0.625rem 0;
 }
 
 .social-icon {
-  width: 1.5rem; 
+  width: 1.5rem;
   height: 1.5rem;
-  fill: #060101; 
-  margin-right: 0.5rem; 
+  fill: #060101;
+  margin-right: 0.5rem;
 }
-
