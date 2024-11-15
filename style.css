@@ -243,3 +243,69 @@ footer .center .bottom p {
 footer .center .bottom p:last-of-type {
   text-align: right;
 }
+
+/* -------------- Splash Scrren - Landing Page ------------- */
+
+.intro {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  transition: 2s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  transition: transform 1s ease;
+}
+
+.intro-logo {
+  position: relative;
+  display: inline-block;
+  bottom: -4.5rem;
+  opacity: 1;
+  font-size: 1.125rem; 
+}
+
+.intro-logo.active {
+  bottom: -2rem;
+  opacity: 1;
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.intro-logo.fade {
+  bottom: -3rem; 
+  opacity: 0;
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.intro img {
+  position: absolute;
+  margin-left: -5rem;
+  margin-top: 0.5rem;
+  height: 6.25rem;
+  width: 4.375rem;
+}
+
+/* -------------- Contact Page ------------- */
+
+.social {
+  display: flex;
+  align-items: center;
+  margin: 0.625rem 0; 
+}
+
+.social-icon {
+  width: 1.5rem; 
+  height: 1.5rem;
+  fill: #060101; 
+  margin-right: 0.5rem; 
+}
+
