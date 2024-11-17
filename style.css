@@ -271,17 +271,18 @@ footer .center .bottom p:last-of-type {
   display: inline-block;
   bottom: -4.5rem;
   opacity: 1;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  font-family: Noto Sans;
 }
 
 .intro-logo.active {
-  bottom: -2rem;
+  bottom: -3rem;
   opacity: 1;
   transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .intro-logo.fade {
-  bottom: -3rem;
+  bottom: -4rem;
   opacity: 0;
   transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -304,7 +305,222 @@ footer .center .bottom p:last-of-type {
 
 .social-icon {
   width: 1.5rem;
+  width: 1.5rem;
   height: 1.5rem;
-  fill: #060101;
+  fill: var(--black);
   margin-right: 0.5rem;
+}
+
+.container {
+  width: 100%;
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 5%;
+}
+
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 68.75rem;
+  padding: 0.2rem;
+}
+
+.row section.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row section.left {
+  flex-basis: 35%;
+  min-width: 20rem;
+  margin-right: 1rem;
+}
+
+.row section.right {
+  flex-basis: 60%;
+}
+
+section.left .ContactTitle h2 {
+  position: relative;
+  font-size: 1.75rem;
+  font-family: var(--font-title);
+  color: var(--green);
+  display: inline-block;
+  margin-bottom: 1.5625rem;
+}
+
+section.left .ContactTitle p {
+  font-family: var(--font-normal);
+}
+
+section.left .ContactTitle h2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0.0625rem;
+  background-color: greenyellow;
+  top: 100%;
+  left: 0%;
+}
+
+section.left .ContactTitle h2::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 0.1875rem;
+  background-color: var(--green);
+  top: calc(95% + 0.04rem);
+  left: 0;
+}
+
+section.left .contactInfo {
+  margin-top: 1.5rem;
+}
+
+.contactInfo .GroupIcon {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+
+.contactInfo .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.GroupIcon .icon i {
+  font-size: 1rem;
+  color: var(--green);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.GroupIcon .details span {
+  display: block;
+  font-size: 0.95rem;
+  font-family: var(--font-normal);
+  padding: 0.07rem;
+  color: var(--black);
+}
+
+.GroupIcon .details span:nth-child(1) {
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+/* ---------- Form ---------- */
+
+.row section.right .messaageForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+.row section.right .inputGroup {
+  margin: 1.125rem 0rem;
+  position: relative;
+}
+
+.messaageForm .halfWidth {
+  flex-basis: 48%;
+}
+
+.messaageForm .fullWidth {
+  flex-basis: 100%;
+}
+
+.messaageForm input {
+  width: 100%;
+  font-family: 1.125rem;
+  padding: 0.125rem 0rem;
+  background-color: var(--background-color);
+  border: none;
+  border-bottom: 2px solid var(--green);
+  outline: none;
+}
+
+.messaageForm textarea {
+  height: 1.5rem;
+  background: transparent;
+  width: 100%;
+  font-family: var(--font-normal);
+  color: var(--green);
+}
+
+.messaageForm textarea {
+  resize: none;
+  height: 7.25rem;
+  display: block;
+  text-align: justify;
+  border: 2px solid var(--green);
+  border-radius: 4px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.messaageForm textarea:focus {
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  /* border-width: 4px; */
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.322rem;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: #dedede;
+  border-radius: 0.9375rem;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+}
+
+.inputGroup label {
+  position: absolute;
+  left: 0;
+  font-family: var(--font-normal);
+  bottom: 0.35rem;
+  color: var(--green);
+  font-size: 1rem;
+  transition: 0.4s;
+  pointer-events: none;
+}
+
+.inputGroup:nth-child(4) label {
+  top: 0.145rem;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup input:focus ~ label,
+.inputGroup textarea:valid ~ label {
+  transform: translateY(-1.575rem);
+  font-size: 0.9rem;
+}
+
+.inputGroup input {
+  font-family: var(--font-normal);
+}
+
+.inputGroup button {
+  padding: 0.9rem 1.5rem;
+  font-size: 0.9rem;
+  background-color: var(--green);
+  border-radius: 1.5625rem;
+  box-shadow: 0px 3px 7px var(--black);
+  transition: 0.4s;
+  color: var(--background-color);
 }
