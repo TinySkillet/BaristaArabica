@@ -117,14 +117,14 @@ nav .right {
   z-index: 2;
 }
 
-.hero p {
+.hero p,
+.hero-courses p {
   font-family: var(--font-normal);
   font-size: 1.2rem;
   font-weight: 550;
   padding: 0 13rem;
   text-align: center;
   margin-top: 1rem;
-  color: var(--background-color);
   background: linear-gradient(
     90deg,
     var(--dark-brown),
@@ -412,7 +412,7 @@ footer .center .bottom p:last-of-type {
   width: 100%;
   height: 100vh;
   background-color: #161616;
-  transition: 2s;
+  transition: 1s;
 }
 
 .logo-header {
@@ -681,4 +681,207 @@ textarea::-webkit-scrollbar-thumb {
   box-shadow: 0px 3px 7px var(--black);
   transition: 0.4s;
   color: var(--background-color);
+}
+
+/* ------------------ Courses Page ------------------------ */
+
+.hero-courses {
+  justify-content: center;
+  margin-top: 6em;
+  background-image: url("./images/certificates.jpg");
+  background-size: cover;
+  background-blend-mode: hard-light;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 5rem;
+  height: 40rem;
+  width: 100%;
+  position: relative;
+}
+
+.hero-courses::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
+  z-index: 1;
+}
+
+.hero-courses h1 {
+  color: burlywood;
+  font-family: var(--font-title);
+  font-size: 2.75rem;
+  padding: 0 20rem;
+  font-weight: bold;
+  word-spacing: 5px;
+  z-index: 2;
+  text-align: center;
+}
+
+.introduction {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.introduction > h1 {
+  font-family: var(--font-title);
+  font-weight: 550;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.introduction p {
+  font-family: var(--font-normal);
+  width: 40rem;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* ----------------------- 3 kinds of courses section ------------------------- */
+
+.courses-container {
+  width: 100%;
+  /* background-color: red; */
+  padding: 0 2rem;
+}
+
+.courses-container .course {
+  width: 100%;
+  padding: 0;
+  /* height: 5rem; */
+  margin-bottom: 120rem;
+}
+
+.courses-container .course .left {
+  width: 50%;
+  background-size: cover;
+  height: 30rem;
+  background-image: url("./images/coursespic1.jpg");
+  border-radius: 1rem;
+}
+
+.courses-container .course .description {
+  width: 50%;
+  justify-content: start;
+  padding: 0rem 0rem 0rem 2rem;
+  margin: 0 0 0 2rem;
+  /* background-color: yellowgreen; */
+  height: 30rem;
+}
+
+.courses-container .course h1 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--green);
+}
+
+.courses-container .course h3 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: var(--font-normal);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--dark-brown);
+  margin-top: 0.1rem;
+}
+
+.courses-container .course h2 {
+  color: maroon;
+  margin-top: 1rem;
+  font-weight: 550;
+  font-size: 1.25rem;
+  font-family: var(--font-normal);
+}
+
+.courses-container .course .description ul li {
+  display: flex;
+  gap: 8px;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  font-family: var(--font-normal);
+  font-style: oblique;
+}
+
+.courses-container .course .description ul {
+  list-style-position: inside;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.courses-container .course .description ul li:hover {
+  color: var(--green);
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.courses-container .course .description button {
+  width: 12rem;
+}
+
+#cards-stack {
+  top: 10%;
+  position: sticky;
+  transform: rotate(-2deg);
+  margin-bottom: 32px;
+  background-color: var(--brown);
+}
+
+/* #card1 {
+  --index: 1;
+}
+#card2 {
+  --index: 2;
+}
+#card3 {
+  --index: 3;
+}
+#card4 {
+  --index: 4;
+} */
+
+.card {
+  gap: 24px;
+  display: flex;
+  padding: 32px;
+  align-items: stretch;
+  border-radius: 12px;
+  flex-direction: column;
+}
+
+#card1 .card-body {
+  background-color: #52b2cf;
+}
+
+#card2 .card-body {
+  background-color: #7ec4cf;
+}
+
+#card3 .card-body {
+  background-color: #52b2cf;
+}
+
+#card4 .card-body {
+  background-color: #7ec4cf;
+}
+
+.card .card-body {
+  box-sizing: border-box;
+  padding: 60px;
+  width: 100%;
+  border: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
