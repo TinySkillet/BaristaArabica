@@ -44,9 +44,7 @@ Understanding the tools and equipment of a coffee bar.
 -Knowledge about Italian and other different international coffee recipes.
 -Café Menu planning and barista speed test.
 -Third wave coffee culture (Manual Coffee Brewing System) .
-
-### Bubble tea making course.
-
+-Bubble tea making course.
 -Video making for the abroad job apply.
 -Interview preparation course for abroad job apply.
 -HACCP and Service class
@@ -74,3 +72,7 @@ Arabica Brew Coffee School
 Coffee Shop and Barista Training Centre. Also We Are Providing Roasted Coffee Beans.
 Location:Koteshor chowk
 For More Details: 9865991279 / 9861197332
+
+Cafe Owner: Samjhana shrestha
+Barista Trainer: Sanish Shrestha
+Cafe Manager: Suman Jung Kunwar
