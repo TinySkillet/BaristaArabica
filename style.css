@@ -112,7 +112,7 @@ nav .right {
     1px 2px 1px var(--black), 1px 2px 1px var(--black); */
   color: #e8c989;
   font-family: var(--font-title);
-  font-size: 2.75rem;
+  font-size: 3rem;
   font-weight: bold;
   word-spacing: 5px;
   z-index: 2;
@@ -152,7 +152,7 @@ nav .right {
 }
 
 .testimonials {
-  margin-top: 7rem;
+  margin-top: 10rem;
   margin-bottom: 7rem;
 }
 
@@ -160,7 +160,7 @@ nav .right {
   font-family: var(--font-title);
   font-weight: 550;
   line-height: 1.5;
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .testimonials p {
@@ -263,15 +263,66 @@ nav .right {
   font-weight: 700;
 }
 
+.features {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  grid-template-columns: 1ft 1ft;
+  grid-template-rows: 1ft 1ft;
+  padding: 0 2rem;
+  gap: 5rem;
+}
+
+.features .card-image {
+  background-image: url("./images/training1.jpg");
+  width: 45vw;
+  background-size: cover;
+  height: 450px;
+  border-radius: 1rem;
+  /* padding: 4rem; */
+}
+
+.features .points {
+  width: 50vw;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2rcap 0 0;
+}
+
+.features .points div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  border-left: 2px solid var(--black);
+  color: var(--black);
+  margin: 0.1rem 0rem;
+  height: 6rem;
+  padding: 0rem 2rem;
+}
+
+.features .points div h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-title);
+}
+
+.features .points div p {
+  font-family: var(--font-normal);
+  font-size: 1rem;
+}
+
 footer {
   padding: 1.5rem 10rem;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 10rem;
 }
 
 footer h1 {
   color: var(--black);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   font-family: var(--font-normal);
   margin-bottom: 1rem;
@@ -320,6 +371,7 @@ footer .center .bottom p:last-of-type {
 
 /* -------------- Hover Card - Home Page ------------- */
 .hover-card {
+  margin-top: 10rem;
   width: 100%;
   height: 25rem;
   position: relative;
@@ -733,7 +785,7 @@ textarea::-webkit-scrollbar-thumb {
   font-family: var(--font-title);
   font-weight: 550;
   line-height: 1.5;
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .introduction p {
