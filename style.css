@@ -483,7 +483,7 @@ footer .center .bottom p:last-of-type {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 68.75rem;
+  /* max-width: 68.75rem; */
   padding: 0.2rem;
 }
 
@@ -581,8 +581,10 @@ section.left .contactInfo {
 .row section.right .messaageForm {
   display: flex;
   justify-content: space-between;
+  align-items: end;
   flex-wrap: wrap;
   padding-top: 1rem;
+  width: 100%;
 }
 
 .row section.right .inputGroup {
