@@ -11,6 +11,8 @@
 
 body {
   background-color: var(--background-color);
+  max-width: 100rem;
+  margin: auto;
 }
 
 a {
@@ -98,6 +100,7 @@ nav .right {
   background-size: cover;
   background-repeat: no-repeat;
   height: 25rem;
+  width: 100%;
 }
 
 .hero h1 {
@@ -150,15 +153,63 @@ nav .right {
 .testimonials-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1ft 1ft;
+  grid-template-rows: 1fr 1fr;
   margin-top: 1rem;
   gap: 2rem 2rem;
+  padding: 0rem 2rem;
+  width: 100%;
 }
 
 .testimonial {
-  background-color: var(--brown);
   border-radius: 0.7rem;
   padding: 1.5rem 2rem 0rem 2rem;
+  transition: all 0.4s ease;
+  position: relative;
+  height: 12rem;
+}
+
+.testimonial .front {
+  z-index: 10;
+  position: absolute;
+  top: 0%;
+  padding: 2rem;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  background-color: var(--green);
+  color: var(--background-color);
+  transition: all 0.4s ease;
+}
+
+.testimonial:hover .back {
+  transform: rotate(4deg);
+}
+
+.testimonial:hover .front {
+  transform: rotate(-4deg);
+  background-color: var(--dark-brown);
+  color: var(--background-color);
+}
+
+.testimonial:hover .front h2 {
+  color: var(--background-color);
+}
+
+.testimonial:hover .front h3 {
+  color: var(--background-color);
+}
+
+.testimonial .back {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: var(--brown);
+  border-radius: 0.7rem;
+  transition: all 0.4s ease;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
 }
 
 .profilepic {
@@ -244,7 +295,92 @@ footer .center .bottom p:last-of-type {
   text-align: right;
 }
 
-/* -------------- Splash Scrren - Landing Page ------------- */
+/* -------------- Hover Card - Home Page ------------- */
+.hover-card {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+
+.hover-card .card-end {
+  background-color: var(--dark-brown);
+  position: absolute;
+  top: 8%;
+  right: 6%;
+  left: 6%;
+  z-index: 2;
+  height: 18.5rem;
+  border-radius: 0.9rem;
+  transform: rotate(1.2deg);
+  transition: all 0.4s ease;
+}
+
+.hover-card .card-middle {
+  background-color: var(--background-color);
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  left: 6%;
+  transform: rotate(-1.5deg);
+  z-index: 3;
+  height: 20rem;
+  border-radius: 0.9rem;
+  transition: all 0.4s ease;
+}
+
+.hover-card .card-front {
+  padding: 0 4rem;
+  justify-content: space-between;
+  background-color: var(--brown);
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  left: 6%;
+  transform: rotate(-1.5deg);
+  z-index: 4;
+  height: 20rem;
+  border-radius: 0.9rem;
+  transition: all 0.4s ease;
+}
+
+.hover-card .card-front .left {
+  justify-content: space-between;
+  height: 5rem;
+  align-items: start;
+}
+
+.hover-card .card-front .left h1 {
+  font-size: 2rem;
+  font-family: var(--font-title);
+}
+
+.hover-card .card-front .left p {
+  font-size: 1.1rem;
+  font-family: var(--font-normal);
+}
+
+.hover-card .card-front:hover {
+  transform: scale(1.1) rotate(1deg) translateY(1rem);
+  color: white;
+  background-color: var(--green);
+}
+
+.hover-card .card-front:hover button {
+  background-color: var(--background-color);
+  color: var(--green);
+}
+
+.hover-card .card-front:hover ~ .card-middle {
+  transform: scale(1.1) rotate(-2deg) translateY(1rem);
+  background-color: var(--brown);
+}
+
+.hover-card .card-front:hover ~ .card-end {
+  transform: scale(1.1) rotate(3deg) translateY(1rem);
+  background-color: var(--dark-brown);
+}
+
+/* -------------- Splash Screen - Landing Page ------------- */
 
 .intro {
   position: fixed;
