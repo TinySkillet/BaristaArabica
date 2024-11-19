@@ -8,6 +8,7 @@
   --link-margin: 0.5rem;
   --font-title: "STIX Two Text";
   --font-normal: "Noto Sans";
+  --font-small: "Arial, sans-serif";
 }
 
 .flex-row {
