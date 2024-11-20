@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: rgba(240, 244, 129, 0.414);
   /* width: 100rem; */
   overflow-x: hidden;
   margin: auto;
@@ -31,9 +31,9 @@ nav {
   padding: 2.25rem 3.5rem;
   background: linear-gradient(
     to right,
-    /* #415635, */ var(--dark-brown),
-    #e8c989,
-    /* #415635 */ var(--dark-brown)
+    var(--dark-brown),
+    #eec97e,
+    var(--dark-brown)
   );
 }
 
@@ -437,6 +437,7 @@ ul li a {
 .hover-card {
   width: 100%;
   height: 25rem;
+  margin-bottom: 8rem;
   position: relative;
 }
 
@@ -840,8 +841,10 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .introduction {
-  margin-top: 5rem;
-  margin-bottom: 7rem;
+  background-color: rgba(170, 153, 39, 0.54) !important;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  background: var(--brown);
 }
 
 .introduction > h1 {
@@ -955,6 +958,7 @@ textarea::-webkit-scrollbar-thumb {
   height: 25rem;
   border-radius: 1rem;
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .image-2 {
@@ -1015,8 +1019,13 @@ textarea::-webkit-scrollbar-thumb {
   border: 2px solid #fff;
 }
 
+.courses {
+  background: linear-gradient(180deg, var(--dark-brown), #e8c989);
+  padding-top: 4rem;
+}
+
 .courses-container {
-  margin-bottom: 20rem;
+  padding-bottom: 20rem;
 }
 
 .courses-container .card:nth-child(even) {
@@ -1053,4 +1062,20 @@ textarea::-webkit-scrollbar-thumb {
   top: 10%;
   right: 3%;
   font-weight: bold;
+}
+
+div.courses-bottom-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background-color: var(--green);
+  color: white;
+  font-family: var(--font-normal);
+}
+
+div.courses-bottom-text h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
 }
