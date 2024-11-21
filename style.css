@@ -269,14 +269,16 @@ nav .right {
   display: flex;
   grid-template-columns: 1ft 1ft;
   grid-template-rows: 1ft 1ft;
-  padding: 0 2rem;
+  padding: 0 6rem;
   gap: 5rem;
 }
 
 .features .card-image {
-  background-image: url("./images/training1.jpg");
+  background-image: url("./images/andrew-welch-1pZbNwlGzNY-unsplash.jpg");
   width: 45vw;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -2rem 0rem;
   height: 450px;
   border-radius: 1rem;
   /* padding: 4rem; */
@@ -295,7 +297,7 @@ nav .right {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: var(--background-color);
+  background: transparent;
   border-left: 2px solid var(--black);
   color: var(--black);
   margin: 0.1rem 0rem;
@@ -317,7 +319,6 @@ nav .right {
 footer {
   padding: 1.5rem 10rem;
   margin-bottom: 1rem;
-  margin-top: 10rem;
 }
 
 footer h1 {
@@ -748,10 +749,9 @@ textarea::-webkit-scrollbar-thumb {
   background-blend-mode: hard-light;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 0 5rem;
-  height: 40rem;
   width: 100%;
-  position: relative;
+  background-position: 0rem -7rem;
+  /* position: relative; */
 }
 
 .hero-courses::before {
@@ -913,7 +913,6 @@ textarea::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e8c989;
   font-size: 40px;
   font-family: var(--font-normal);
   color: #fff;
@@ -1201,7 +1200,7 @@ nav .right {
 footer {
   font-family: var(--font-normal);
   width: 100%;
-  /* position: absolute; */
+  position: absolute;
   background: linear-gradient(to right, #161616, #658352);
   color: #fff;
   padding: 2.25rem 3rem;
@@ -1241,6 +1240,7 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   width: 10rem;
+  color: var(--background-color);
   line-height: 2rem;
   /* margin-top: 2.5rem; */
 }
@@ -1762,7 +1762,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .introduction {
-  background-color: rgba(170, 153, 39, 0.54) !important;
+  background: transparent !important;
   padding-top: 5rem;
   padding-bottom: 7rem;
   background: var(--brown);
