@@ -309,6 +309,12 @@ nav .right {
   font-size: 2rem;
   font-weight: 600;
   font-family: var(--font-title);
+  background: linear-gradient(
+    to right,
+    var(--dark-brown),
+    #eec97e,
+    var(--dark-brown)
+  );
 }
 
 .features .points div p {
@@ -803,6 +809,8 @@ textarea::-webkit-scrollbar-thumb {
 .courses-container {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: start;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -1879,7 +1887,8 @@ textarea::-webkit-scrollbar-thumb {
   height: 25rem;
   border-radius: 1rem;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
+  /* margin-bottom: 100rem; */
 }
 
 .image-2 {
@@ -1904,7 +1913,7 @@ textarea::-webkit-scrollbar-thumb {
 @media (min-width: 1024px) {
   .text {
     height: 300px;
-    top: 30%;
+    top: 12%;
     position: sticky;
     width: 45%;
   }
@@ -1999,4 +2008,41 @@ div.courses-bottom-text {
 div.courses-bottom-text h1 {
   font-size: 1.5rem;
   font-weight: normal;
+}
+
+/*----------------- about us page ------------------ */
+.aboutus-hero {
+  background: url("./images/coffeecups_horizontal.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.gallery {
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.gallery h1 {
+  font-family: var(--font-title);
+  color: var(--black);
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+
+.gallery-grid {
+  padding: 1rem;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  row-gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-grid .gallery-image {
+  width: 25rem;
+  height: 22rem;
+  object-fit: cover;
+  border-radius: 1rem;
 }
