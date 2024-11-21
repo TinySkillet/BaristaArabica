@@ -39,7 +39,7 @@ nav {
 
 .logo {
   position: absolute;
-  top: 2.25%;
+  top: 2.5%;
   left: 50%;
   transform: translateX(-50%);
   height: 12rem;
@@ -283,7 +283,7 @@ footer {
   /* position: absolute; */
   background: linear-gradient(to right, #161616, #658352);
   color: #fff;
-  padding: 2.25rem 0 1.875rem;
+  padding: 2.25rem 3rem;
   line-height: 1.25rem;
 }
 
@@ -720,7 +720,7 @@ section.left .contactInfo {
   width: 100%;
   font-family: 1.125rem;
   padding: 0.125rem 0rem;
-  background-color: var(--background-color);
+  background: transparent;
   border: none;
   border-bottom: 2px solid var(--green);
   outline: none;
