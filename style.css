@@ -309,12 +309,12 @@ nav .right {
   font-size: 2rem;
   font-weight: 600;
   font-family: var(--font-title);
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     var(--dark-brown),
     #eec97e,
     var(--dark-brown)
-  );
+  ); */
 }
 
 .features .points div p {
@@ -385,7 +385,7 @@ footer .center .bottom p:last-of-type {
 }
 
 .hover-card .card-end {
-  background-color: var(--dark-brown);
+  /* background-color: var(--dark-brown); */
   position: absolute;
   top: 8%;
   right: 6%;
@@ -398,7 +398,7 @@ footer .center .bottom p:last-of-type {
 }
 
 .hover-card .card-middle {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   position: absolute;
   top: 6%;
   right: 6%;
@@ -413,7 +413,7 @@ footer .center .bottom p:last-of-type {
 .hover-card .card-front {
   padding: 0 4rem;
   justify-content: space-between;
-  background-color: var(--brown);
+  background-color: var(--green) !important;
   position: absolute;
   top: 6%;
   right: 6%;
@@ -443,7 +443,7 @@ footer .center .bottom p:last-of-type {
 
 .hover-card .card-front:hover {
   transform: scale(1.1) rotate(1deg) translateY(1rem);
-  color: white;
+  color: var(--background-color) !important;
   background-color: var(--green);
 }
 
@@ -454,12 +454,12 @@ footer .center .bottom p:last-of-type {
 
 .hover-card .card-front:hover ~ .card-middle {
   transform: scale(1.1) rotate(-2deg) translateY(1rem);
-  background-color: var(--brown);
+  background-color: rgba(235, 212, 108, 0.709) !important;
 }
 
 .hover-card .card-front:hover ~ .card-end {
   transform: scale(1.1) rotate(3deg) translateY(1rem);
-  background-color: var(--dark-brown);
+  background-color: var(--dark-brown) !important;
 }
 
 /* -------------- Splash Screen - Landing Page ------------- */
