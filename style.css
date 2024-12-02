@@ -841,10 +841,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .introduction {
-  background-color: rgba(170, 153, 39, 0.54) !important;
+  background-color: #F8FACA;
   padding-top: 5rem;
   padding-bottom: 7rem;
-  background: var(--brown);
 }
 
 .introduction > h1 {
@@ -1020,7 +1019,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .courses {
-  background: linear-gradient(180deg, var(--dark-brown), #e8c989);
+  background: rgba(170, 153, 39, 0.54) !important;
   padding-top: 4rem;
 }
 
@@ -1063,6 +1062,41 @@ textarea::-webkit-scrollbar-thumb {
   font-weight: bold;
 }
 
+.courses-bottom-text {
+  background-color: #F8FACA;
+  text-align: center;
+  padding: 40px 20px 60px 20px; 
+}
+
+.courses-bottom-text h1 {
+  font-size: x-large;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: var(--font-title);
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0073e6; /* Facebook Blue */
+  transform: scale(1.1);
+}
+
+.social-icon i {
+  pointer-events: none; /* Disable interaction with icons themselves */
+}
+
+
 /* ------------ About Us Page ------------ */
 
 .about-us {
@@ -1094,7 +1128,7 @@ textarea::-webkit-scrollbar-thumb {
 .about-description,
 .about-mission {
   font-family: var(--font-normal);
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
@@ -1159,21 +1193,38 @@ textarea::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 
+.gallary {
+  width: 100%;
+  background-color: rgba(170, 153, 39, 0.54) !important;
+  background: var(--brown);
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
 .gallary h2 {
   font-family: var(--font-title);
   font-weight: 550;
   line-height: 1.5;
   font-size: 2rem;
-  justify-content: center;
-  align-items: center;
+}
+
+.gallary p {
+  font-family: var(--font-normal);
+  width: 40rem;
   text-align: center;
-  padding: 0 0 2.50rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
 }
 
 .grid-wrapper {
   display: grid;
   grid-gap: 0.312rem; 
-  padding: 0 1.25rem 3.125rem;
+  padding: 0 5.25rem 3.125rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   grid-auto-rows: 200px; 
   grid-auto-flow: dense; 
@@ -1196,7 +1247,7 @@ textarea::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%; 
   object-fit: cover;
-  border-bottom: 5px solid #ccc;
+  border-bottom: 5px solid #658352;;
 }
 
 .grid-wrapper .wide {
@@ -1210,6 +1261,89 @@ textarea::-webkit-scrollbar-thumb {
 .grid-wrapper .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.whychooseus {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #F8FACA;
+  color: #333;
+}
+
+.whychooseus h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whychooseus .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.diamond-icon {
+  background-color: #9b59b6;
+}
+
+.clock-icon {
+  background-color: #f39c12;
+}
+
+.hand-icon {
+  background-color: #1abc9c;
+}
+
+.heart-icon {
+  background-color: #e74c3c;
+}
+
+
+.feature-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.whychooseus h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.additional-offerings {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.additional-offerings li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
 }
 
 /* Media Queries for Responsive Design */
