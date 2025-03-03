@@ -135,7 +135,6 @@ nav .right {
   font-family: var(--font-normal);
   font-size: 1.2rem;
   font-weight: 550;
-  padding: 3rem;
   text-align: center;
   margin-top: 1rem;
   background: linear-gradient(
@@ -1135,7 +1134,7 @@ textarea::-webkit-scrollbar-thumb {
 
   .hero-courses p {
     font-size: 0.9rem;
-    padding: 4rem;
+    margin-top: 2rem;
   }
 
   /* Navigation adjustments */
@@ -1876,9 +1875,10 @@ ul.additional-offerings li:nth-child(even) {
   }
 }
 
-.gallary-text {
+p.gallary-desc {
   gap: 2rem;
-  padding-bottom: 3rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-normal);
 }
 
 .grid-wrapper {
