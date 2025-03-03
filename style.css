@@ -250,15 +250,18 @@ nav .right {
 }
 
 .profilepic {
-  background-image: url("./images/avatar.png");
   height: 60px;
   width: 60px;
   border-radius: 50%;
 }
 
+.profilepic1 {
+  background-image: url("./images/avatar.png");
+}
+
 .testimonial .bottom {
   text-align: start;
-  width: 35rem;
+  width: 100%;
 }
 
 .info {
@@ -304,11 +307,6 @@ nav .right {
     padding: 1rem;
   }
 
-  .profilepic {
-    height: 50px;
-    width: 50px;
-  }
-
   .testimonial .bottom {
     width: 100%;
   }
@@ -346,11 +344,6 @@ nav .right {
     left: 0;
     height: auto;
     padding: -5rem;
-  }
-
-  .profilepic {
-    height: 50px;
-    width: 50px;
   }
 
   .testimonial .bottom {
@@ -396,8 +389,9 @@ nav .right {
   }
 
   .profilepic {
-    height: 45px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
   }
 
   .info h2,
