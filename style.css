@@ -1190,6 +1190,29 @@ textarea::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .hero-courses h1 {
+    font-size: 2.5rem;
+    padding: 0 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-courses h1 {
+    font-size: 2rem;
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-courses h1 {
+    font-size: 1.75rem;
+    padding: 0 2rem;
+    word-spacing: 2px;
+  }
+}
+
+
 .introduction {
   background: transparent !important;
   padding-top: 5rem;
@@ -1213,6 +1236,88 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 1.2rem;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 1024px) {
+  .introduction p {
+    width: 30rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction p {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .introduction p {
+    width: 90%;
+    font-size: 0.95
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem
+  }
+}
+
 
 /* --------------- 3 kinds of courses section ------------------ */
 
