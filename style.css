@@ -253,10 +253,24 @@ nav .right {
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .profilepic1 {
-  background-image: url("./images/avatar.png");
+  background-image: url("./images/owner.JPG");
+}
+
+.profilepic2 {
+  background-image: url("./images/instructor.jpg");
+}
+
+.profilepic3 {
+  background-image: url("./images/manager.jpg");
+}
+
+.profilepic4 {
+  background-image: url("./images/barista.jpg");
 }
 
 .testimonial .bottom {
@@ -327,8 +341,9 @@ nav .right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
-    padding: 0rem;
+    gap: 17rem;
+    margin-bottom: 10rem;
+    height: auto;
   }
 
   .testimonial {
@@ -362,42 +377,65 @@ nav .right {
     margin-bottom: 5rem;
   }
 
-  .testimonials > h1 {
-    font-size: 1.5rem;
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    padding: 0 1rem;
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-buttons a {
+    font-size: 15px;
+    padding: 1rem 2rem;
     text-align: center;
   }
 
-  .testimonials p {
-    font-size: 0.8rem;
+  .hero-buttons .button-primary {
+    margin: 0;
   }
+}
 
-  .testimonials-container {
-    flex-direction: column;
-    gap: 13rem;
-    padding: 1.5rem;
-    padding-bottom: 11.5rem;
-  }
+.testimonials > h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
 
-  .testimonial {
-    width: 90%;
-  }
+.testimonials p {
+  font-size: 0.8rem;
+}
 
-  .testimonial .front,
-  .testimonial .back {
-    width: 100%;
-    left: 0;
-  }
+.testimonials-container {
+  flex-direction: column;
+  padding: 1.5rem;
+  padding-bottom: 5rem;
+}
 
-  .profilepic {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-  }
+.testimonial {
+  width: 90%;
+}
 
-  .info h2,
-  .info h3 {
-    font-size: 0.85rem;
-  }
+.testimonial .front,
+.testimonial .back {
+  width: 100%;
+  left: 0;
+}
+
+.profilepic {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.info h2,
+.info h3 {
+  font-size: 0.85rem;
 }
 
 /* ----------- Footer --------- */
