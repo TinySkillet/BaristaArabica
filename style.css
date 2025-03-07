@@ -1585,6 +1585,28 @@ div.courses-bottom-text h1 {
   .about-image img {
     display: none;
   }
+
+  .hero-courses h1 {
+    font-size: 28px;
+  }
+
+  .introduction p {
+    padding: 0px 140px;
+    text-overflow: clip;
+  }
+
+  .image-1,
+  .image-2,
+  .image-3 {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    height: 110px;
+    width: 160px;
+    top: 6.5%;
+  }
 }
 
 .about-image img:hover {
