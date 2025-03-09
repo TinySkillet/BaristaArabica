@@ -1166,7 +1166,6 @@ textarea::-webkit-scrollbar-thumb {
 
   .hero-courses p {
     font-size: 0.9rem;
-    padding: 4rem;
   }
 
   /* Navigation adjustments */
@@ -1188,7 +1187,7 @@ textarea::-webkit-scrollbar-thumb {
 /* ------------------ Courses Page ------------------------ */
 .hero-courses {
   justify-content: center;
-  margin-top: 6em;
+  margin-top: 8em;
   background-image: url("./images/certificates.jpg");
   background-size: cover;
   background-blend-mode: hard-light;
@@ -1372,6 +1371,13 @@ textarea::-webkit-scrollbar-thumb {
   }
 }
 
+@media (min-width: 480px) {
+  div.text.left {
+    padding-bottom: 0rem;
+    margin: 0rem;
+  }
+}
+
 .cards {
   width: 100%;
   margin: 0;
@@ -1408,7 +1414,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .courses-container {
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 
 .courses-container .card:nth-child(even) {
@@ -1598,14 +1604,34 @@ div.courses-bottom-text h1 {
   .image-1,
   .image-2,
   .image-3 {
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  .courses-container {
+    padding-bottom: 5rem;
   }
 
   .logo {
     height: 110px;
     width: 160px;
-    top: 6.5%;
+    top: 7%;
+  }
+
+  nav .left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  nav .left a {
+    font-size: 13px;
+  }
+
+  .logo {
+    top: 9%;
   }
 }
 
