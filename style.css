@@ -1414,7 +1414,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .courses-container {
-  padding-bottom: 10rem;
+  padding-bottom: 20rem;
 }
 
 .courses-container .card:nth-child(even) {
